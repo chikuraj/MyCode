@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from "react";
+import { ToastContainer } from "react-toastify";
 import './App.css';
-
-function App() {
+import MyContact from "./components/contactUs"; 
+import Header from "./components/Navbar";
+// import {Switch, Route} from 'react-router-dom';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <ToastContainer />
+    <Header />
+    <MyContact />
+    {/* <Switch>
+      <Route exact path="/">
+        <h1>Welcome to react redux contact book</h1>
+      </Route>
+      <Route path="/about">
+        <h1>Welcome to react redux about book</h1>
+      </Route>
+      <Route path="/edit">
+        <h1>Welcome to react redux edit book</h1>
+      </Route>
+    </Switch> */}
+    </>
   );
-}
+} 
 
 export default App;
