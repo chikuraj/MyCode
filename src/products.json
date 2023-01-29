@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "productName":"Nantucket Pine Orangebanana",
+        "image":"/public/work3.png",
+        "price":229
+    },
+    {
+        "id":2,
+        "productName":"Quiche Assorted",
+        "image":"/public/work3.png",
+        "price":229
+    },
+    {
+        "id":3,
+        "productName":"Pork - Kidney",
+        "image":"/public/work3.png",
+        "price":229
+    },
+    {
+        "id":4,
+        "productName":"Squash - Sunburst",
+        "image":"/public/work3.png",
+        "price":229
+    },
+    {
+        "id":5,
+        "productName":"Pork - Ham Hocks - Smoked",
+        "image":"/public/work3.png",
+        "price":229
+    }
+]
