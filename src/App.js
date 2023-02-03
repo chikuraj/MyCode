@@ -1,23 +1,19 @@
-import React from "react";
-import './App.css';
-// import MyContact from "./components/contactUs"; 
-// import Home from "./page/home";
-// import LearnRedux from "./components/learnRedux";
-import {Routes} from 'react-router-dom';
-import { Navbar } from "react-bootstrap";
-import LearnRedux from "./components/learnRedux";
+import products from "./products.json";
+import "./App.css";
+import Product from "./components/Product";
+import Cart from "./components/Cart";
+
 const App = () => {
   return (
     <>
-    <Navbar />
-    <LearnRedux />
-    {/* <LearnRedux /> */}
-    <Routes>
-      {/* <Route path="/" element={<Home />}></Route>
-      <Route path="/" element={<Header />}></Route> */}
-    </Routes>
+      <Cart />
+      <div className="products">
+        {products.map((product) => (
+          <Product {...product} />
+        ))}
+      </div>
     </>
   );
-} 
+}
 
 export default App;
